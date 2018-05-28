@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ats.monginis_cash_mgmt.activity.CompanySelectionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/rbCompany1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:text="@string/company_1" />
+
+                <RadioButton
+                    android:id="@+id/rbCompany2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:text="@string/company_2" />
+
+                <RadioButton
+                    android:id="@+id/rbCompany3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:text="@string/company_3" />
+
+                <RadioButton
+                    android:id="@+id/rbCompany4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:text="@string/company_4" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btnCompSelection_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@color/colorAccent"
+                android:text="Submit"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnCompSelection_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/sofiapro_light"
+                android:gravity="center"
+                android:text="Login Again"
+                android:textColor="@color/colorBlack" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

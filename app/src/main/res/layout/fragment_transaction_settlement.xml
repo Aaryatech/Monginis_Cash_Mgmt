@@ -1,0 +1,299 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.ats.monginis_cash_mgmt.fragment.TransactionSettlementFragment">
+
+    <LinearLayout
+        android:id="@+id/llTrSett_ButtonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTranscSettle_MoneyOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Money Out"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llTrSett_ButtonPanel"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/image"
+                android:gravity="center"
+                android:text="&#xe90a;"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvTranscSettle_CompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/sofiapro_bold"
+                android:maxLines="1"
+                android:text="Galdhar Foods Private Limited"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sofiapro_bold"
+            android:text="Filter" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbTranscSettle_All"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofiapro_light"
+                android:text="All" />
+
+            <RadioButton
+                android:id="@+id/rbTranscSettle_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofiapro_light"
+                android:text="Date" />
+
+            <RadioButton
+                android:id="@+id/rbTranscSettle_Person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofiapro_light"
+                android:text="Person" />
+
+            <RadioButton
+                android:id="@+id/rbTranscSettle_EnterBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sofiapro_light"
+                android:text="Enter By"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llTranscSettle_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edTranscSettle_FromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:editable="false"
+                android:fontFamily="@font/sofiapro_light"
+                android:gravity="center_vertical"
+                android:hint="From Date"
+                android:inputType="none"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edTranscSettle_ToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/editbox_background_normal"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:editable="false"
+                android:fontFamily="@font/sofiapro_light"
+                android:gravity="center_vertical"
+                android:hint="To Date"
+                android:inputType="none"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivTranscSettle_DateSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/search_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTranscSettle_Person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:text="Person"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spTranscSettle_Person"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTranscSettle_PersonSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/search_icon" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTranscSettle_EnterBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:text="Enter By"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spTranscSettle_EnterBy"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTranscSettle_EnterBySearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/search_icon" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/sofiapro_bold"
+            android:maxLines="1"
+            android:text="Entries"
+            android:textSize="18sp" />
+
+
+        <ListView
+            android:id="@+id/lvTranscSettle_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:divider="#00000000"
+            android:dividerHeight="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.ats.monginis_cash_mgmt.fragment.MoneyInEntriesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/image"
+            android:gravity="center"
+            android:text="&#xe90a;"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMoneyInEntries_CompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/sofiapro_bold"
+            android:maxLines="1"
+            android:text="Galdhar Foods Private Limited"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/sofiapro_bold"
+        android:text="Filter" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMoneyInEntry_All"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sofiapro_light"
+            android:text="All" />
+
+        <RadioButton
+            android:id="@+id/rbMoneyInEntry_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sofiapro_light"
+            android:text="Date" />
+
+        <RadioButton
+            android:id="@+id/rbMoneyInEntry_Source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sofiapro_light"
+            android:text="Source" />
+
+        <RadioButton
+            android:id="@+id/rbMoneyInEntry_EnterBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/sofiapro_light"
+            android:text="Enter By" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/llMoneyInEntry_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edMoneyInEntry_FromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:editable="false"
+            android:fontFamily="@font/sofiapro_light"
+            android:gravity="center_vertical"
+            android:hint="From Date"
+            android:inputType="none"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edMoneyInEntry_ToDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:editable="false"
+            android:fontFamily="@font/sofiapro_light"
+            android:gravity="center_vertical"
+            android:hint="To Date"
+            android:inputType="none"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/ivMoneyInEntry_DateSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/search_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMoneyInEntry_Source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sofiapro_light"
+                android:text="Source"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spMoneyInEntry_Source"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMoneyInEntry_SourceSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/search_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMoneyInEntry_EnterBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sofiapro_light"
+                android:text="Enter By"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spMoneyInEntry_EnterBy"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMoneyInEntry_EnterBySearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/sofiapro_bold"
+        android:maxLines="1"
+        android:text="Entries"
+        android:textSize="18sp" />
+
+
+    <ListView
+        android:id="@+id/lvMoneyInEntry_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:divider="#00000000"
+        android:dividerHeight="5dp" />
+
+
+</LinearLayout>

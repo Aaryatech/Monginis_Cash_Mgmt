@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Petty Cash Management</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="icon_add">&#xe905;</string>
+    <string name="icon_minus">&#xe904;</string>
+
+    <string name="company_1">Galdhar Foods Private Limited</string>
+    <string name="company_2">MRG</string>
+    <string name="company_3">GFPL Logistics</string>
+    <string name="company_4">CP</string>
+</resources>
