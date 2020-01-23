@@ -35,10 +35,10 @@ public class Constants {
 //    public static final String BASE_URL_3 = "http://132.148.143.124:8080/gfpllogi/";
 //    public static final String BASE_URL_4 = "http://132.148.143.124:8080/cp/";
 
-    public static final String BASE_URL_1 = "http://132.148.151.41:8080/cashmgmt/";
-    public static final String BASE_URL_2 = "http://132.148.151.41:8080/mrg/";
-    public static final String BASE_URL_3 = "http://132.148.151.41:8080/gfpllogi/";
-    public static final String BASE_URL_4 = "http://132.148.151.41:8080/cp/";
+    public static final String BASE_URL_1 = "http://132.148.148.215:8080/cashmgmt/";
+//    public static final String BASE_URL_2 = "http://132.148.151.41:8080/mrg/";
+//    public static final String BASE_URL_3 = "http://132.148.151.41:8080/gfpllogi/";
+//    public static final String BASE_URL_4 = "http://132.148.151.41:8080/cp/";
 
 //    public static final String BASE_URL_1 = "http://192.168.2.5:8089/";
 //    public static final String BASE_URL_2 = "http://192.168.2.5:8089/";

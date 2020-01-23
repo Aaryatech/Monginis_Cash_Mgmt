@@ -60,6 +60,8 @@
                 android:layout_marginTop="15dp">
 
                 <EditText
+                    android:editable="false"
+                    android:inputType="none"
                     android:id="@+id/edReports_FromDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -87,6 +89,8 @@
                 <EditText
                     android:id="@+id/edReports_ToDate"
                     android:layout_width="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
                     android:layout_height="wrap_content"
                     android:drawableRight="@android:drawable/ic_menu_my_calendar"
                     android:fontFamily="@font/sofiapro_light"

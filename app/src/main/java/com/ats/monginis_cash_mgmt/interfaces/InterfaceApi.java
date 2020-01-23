@@ -44,7 +44,8 @@ public interface InterfaceApi {
 //    public static final String IMAGE_URL_3 = "http://132.148.143.124:8080/gfpllogi/uploads/bill/";
 //    public static final String IMAGE_URL_4 = "http://132.148.143.124:8080/cp/uploads/bill/";
 
-    public static final String IMAGE_URL_1 = "http://132.148.151.41:8080/cashmgmt_uploads/gfpl/bill/";
+    //  public static final String IMAGE_URL_1 = "http://132.148.151.41:8080/cashmgmt_uploads/gfpl/bill/";
+    public static final String IMAGE_URL_1 = "http://132.148.148.215:8080/cashmguploads/bill/";
     public static final String IMAGE_URL_2 = "http://132.148.151.41:8080/cashmgmt_uploads/mrg/bill/";
     public static final String IMAGE_URL_3 = "http://132.148.151.41:8080/cashmgmt_uploads/gfpllogi/bill/";
     public static final String IMAGE_URL_4 = "http://132.148.151.41:8080/cashmgmt_uploads/cp/bill/";

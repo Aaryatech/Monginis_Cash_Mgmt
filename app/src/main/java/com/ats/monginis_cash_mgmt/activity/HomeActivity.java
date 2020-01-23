@@ -52,7 +52,8 @@ public class HomeActivity extends AppCompatActivity
     int userId, userType, company;
     String userName, mob, pwd;
 
-    public static String BASE_URL = "";
+    //public static String BASE_URL = "";
+    public static String BASE_URL = Constants.BASE_URL_1;
     public static String COMPANY_NAME = "";
 
     @Override
@@ -79,7 +80,7 @@ public class HomeActivity extends AppCompatActivity
         tvUserMgmt = findViewById(R.id.tvAdminMenuUserMgmt);
         tvLogout = findViewById(R.id.tvAdminMenuLogout);
 
-        // tvCompany.setVisibility(View.GONE);
+         tvCompany.setVisibility(View.GONE);
 
         tvHome.setOnClickListener(this);
         tvMoneyIn.setOnClickListener(this);
@@ -106,7 +107,7 @@ public class HomeActivity extends AppCompatActivity
         Gson gson = new Gson();
         String json2 = pref.getString("userData", "");
         MUser userBean = gson.fromJson(json2, MUser.class);
-        //Log.e("User Bean : ", "---------------" + userBean);
+        Log.e("User Bean : ", "---------------" + userBean);
         try {
 
             if (userBean != null) {
@@ -143,7 +144,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (company == 1) {
             BASE_URL = Constants.BASE_URL_1;
             COMPANY_NAME = getResources().getString(R.string.company_1);
-        } else if (company == 2) {
+        } /*else if (company == 2) {
             BASE_URL = Constants.BASE_URL_2;
             COMPANY_NAME = getResources().getString(R.string.company_2);
         } else if (company == 3) {
@@ -152,7 +153,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (company == 4) {
             BASE_URL = Constants.BASE_URL_4;
             COMPANY_NAME = getResources().getString(R.string.company_4);
-        }
+        }*/
 
 //8793338336
         if (userType == 1) {

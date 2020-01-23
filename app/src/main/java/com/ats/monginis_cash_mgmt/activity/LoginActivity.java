@@ -65,14 +65,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this, "Please Enter Password", Toast.LENGTH_SHORT).show();
                 edPassword.requestFocus();
             } else {
-                Intent intent = new Intent(this, CompanySelectionActivity.class);
+               /* Intent intent = new Intent(this, CompanySelectionActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("mobile", edMobile.getText().toString());
                 bundle.putString("password", edPassword.getText().toString());
                 intent.putExtras(bundle);
                 startActivity(intent);
-                finish();
-                //doLogin(edMobile.getText().toString(), edPassword.getText().toString());
+                finish();*/
+                doLogin(edMobile.getText().toString(), edPassword.getText().toString());
             }
         }
     }
@@ -131,11 +131,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 Gson gson = new Gson();
                                 String json = gson.toJson(data.getMUser());
                                 editor.putString("userData", json);
+                                editor.putInt("Company", 1);
                                 editor.apply();
-                                editor.apply();
-
-                                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                                HomeActivity.BASE_URL = "";
+                                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                                startActivity(i);
+                                /*i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(i);*/
                                 finish();
+
+                               /* startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                                finish();*/
 
                             }
                         } else {

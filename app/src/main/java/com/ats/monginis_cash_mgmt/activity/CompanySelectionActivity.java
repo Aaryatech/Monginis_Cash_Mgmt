@@ -88,7 +88,7 @@ public class CompanySelectionActivity extends AppCompatActivity {
                 if (rbCompany1.isChecked()) {
                     BASE_URL = Constants.BASE_URL_1;
                     doLogin(mobile, password, 1);
-                } else if (rbCompany2.isChecked()) {
+                } /*else if (rbCompany2.isChecked()) {
                     BASE_URL = Constants.BASE_URL_2;
                     doLogin(mobile, password, 2);
                 } else if (rbCompany3.isChecked()) {
@@ -97,7 +97,7 @@ public class CompanySelectionActivity extends AppCompatActivity {
                 } else if (rbCompany4.isChecked()) {
                     BASE_URL = Constants.BASE_URL_4;
                     doLogin(mobile, password, 4);
-                }
+                }*/
             }
         });
 

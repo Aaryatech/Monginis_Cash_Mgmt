@@ -3,9 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash"
+    android:background="@color/colorWhite"
     tools:context="com.ats.monginis_cash_mgmt.activity.SplashActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"/>
+
+    <TextView
+        android:layout_below="@id/imageView"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Petty Cash Management"/>
 
     <TextView
         android:id="@+id/tvSplash_GetStarted"
